@@ -41,7 +41,8 @@ $ ansible-galaxy install git+https://github.com/wimpy/wimpy.ecr.git,master
 Ansible executes commands using what they call "playbooks", which is like a list of tasks to execute.
 A playbook contains tasks or roles. A role is a set of tasks that we group together.
 
-Now that we know basic Ansible jargon, a playbook to deploy our application could be
+Now that we know basic Ansible jargon, create a playbook called, for instance, `deploy.yml`.
+An example of `deploy.yml` file to deploy our application could be:
 ```yaml
 - hosts: localhost
   connection: local
